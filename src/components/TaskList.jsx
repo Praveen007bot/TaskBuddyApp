@@ -10,7 +10,7 @@ function TaskList({ tasks, updateTask, deleteTask, clearAll }) {
     return (
         <ul className="task-list">
             {tasks.map((task, index) => (
-                <li key={index} className={task.completed ? "completed" : ""}>
+                <li key={index} className={task.completed ? "completed." : ""}>
                     <div>
                         <span>{task.text}</span>
                         <small>
